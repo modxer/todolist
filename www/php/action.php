@@ -18,7 +18,8 @@ if(!empty($data->id)) $param['id'] = $data->id;
 
 // простая фильтрация
 foreach ($param as $key=>$value) {
-    $param[$key] = preg_replace("#[^\w\s]+#", ' ', $value);
+    $param[$key] = strip_tags($value);
+    $param[$key] = htmlentities($value);
 }
 
 switch ($param['action']) {
