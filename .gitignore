@@ -1,0 +1,6 @@
+/www/back/core/cache/*
+/www/back/core/packages/*
+/www/core/cache/*
+/www/core/packages/*
+/.idea/*
+/_simlinks/*
