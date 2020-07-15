@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <title>To do list</title>
 
@@ -8,9 +9,51 @@
     <meta name="description" content="">
 
     <script src="/libs/vue-2.6.11.min.js"></script>
+    <script src="/js/script.js"></script>
 
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
 
+<body>
+    <div class="wrap" id="todolist">
+        <div class="container">
+            <h1>Список задач</h1>
+
+            <div class="add">
+                <form action="" method="post">
+                    <input type="text" name="text">
+                    <button type="submit">Добавить</button>
+                </form>
+            </div>
+
+            <ul class="items">
+                <li>
+                    <div class="title">Задача 1</div>
+                    <div class="remove">×</div>
+                </li>
+                <li>
+                    <div class="title">Задача 1</div>
+                    <div class="remove">×</div>
+                </li>
+                <li>
+                    <div class="title">Задача 1</div>
+                    <div class="remove">×</div>
+                </li>
+                <li>
+                    <div class="title">Задача 1</div>
+                    <div class="remove">×</div>
+                </li>
+            </ul>
+
+            <div class="load-button">
+                <button>Загрузить ещё</button>
+            </div>
+
+            <div class="loader">
+                <div class="loader-ring"></div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
