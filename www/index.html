@@ -17,33 +17,38 @@
 <body>
     <div class="wrap" id="todolist">
         <div class="container">
-            <h1>Список задач</h1>
+            <h1>Список дел</h1>
 
-            <div class="add">
-                <form action="" method="post">
-                    <input type="text" name="text">
-                    <button type="submit">Добавить</button>
-                </form>
+            <div class="tasks">
+                <div class="add">
+                    <form action="" method="post">
+                        <div class="field">
+                            <input type="text" name="text" autofocus>
+                        </div>
+                        
+                        <button type="submit">Добавить</button>
+                    </form>
+                </div>
+
+                <ul class="items">
+                    <li>
+                        <div class="title">Задача 1</div>
+                        <div class="remove">×</div>
+                    </li>
+                    <li>
+                        <div class="title">Задача 1</div>
+                        <div class="remove">×</div>
+                    </li>
+                    <li>
+                        <div class="title">Задача 1</div>
+                        <div class="remove">×</div>
+                    </li>
+                    <li>
+                        <div class="title">Задача 1</div>
+                        <div class="remove">×</div>
+                    </li>
+                </ul>
             </div>
-
-            <ul class="items">
-                <li>
-                    <div class="title">Задача 1</div>
-                    <div class="remove">×</div>
-                </li>
-                <li>
-                    <div class="title">Задача 1</div>
-                    <div class="remove">×</div>
-                </li>
-                <li>
-                    <div class="title">Задача 1</div>
-                    <div class="remove">×</div>
-                </li>
-                <li>
-                    <div class="title">Задача 1</div>
-                    <div class="remove">×</div>
-                </li>
-            </ul>
 
             <div class="load-button">
                 <button>Загрузить ещё</button>
