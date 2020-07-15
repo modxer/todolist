@@ -23,6 +23,10 @@ var tasks = new Vue({
                 if(params.action == 'getlist') {
                     this.insertList(response.data);
                 }
+
+                if(params.action == 'remove') {
+                    this.removeFromList(response.data);
+                }
             }).catch(function (error) {
                 console.log(error);
             });
@@ -60,6 +64,20 @@ var tasks = new Vue({
             };
 
             this.request(params);
+        },
+
+        removeTask: function(id = 0) {
+            let params = {
+                action: 'remove',
+                id: id
+            };
+
+            this.request(params)
+        },
+
+        removeFromList: function(response) {
+            let task = document.getElementById('taskid-' + response.id);
+            task.remove();
         },
 
         setFocus: function () {

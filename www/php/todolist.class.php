@@ -36,6 +36,7 @@ class toDoList {
     }
 
     /**
+     * Добавление задачи в БД
      * @param string $title
      * @return bool
      */
@@ -67,10 +68,32 @@ class toDoList {
         return true;
     }
 
+    /**
+     * Удаление задачи по id
+     * @param $id
+     */
     public function removeTask($id) {
-        echo 'removeTask';
+        $sql = "DELETE FROM `tasks` WHERE id = {$id}";
+        $removeTasks = $this->db->query($sql);
+
+        $sql = "DELETE FROM `log` WHERE task_id = {$id}";
+        $removeLog = $this->db->query($sql);
+
+        if(!$removeTasks) {
+            $success = true;
+        } else {
+            $success = false;
+        }
+
+        $this->response([
+            'success' => true,
+            'id' => $id
+        ]);
     }
 
+    /**
+     * Получение списка задач
+     */
     public function getList() {
         $sql = "SELECT id, title FROM tasks ORDER BY id DESC;";
         $result = $this->db->query($sql);
@@ -86,17 +109,26 @@ class toDoList {
         ]);
     }
 
-    public function response($response) {
-        echo json_encode($response);
-        exit();
-    }
-
+    /**
+     * Парсинг шаблона задачи
+     * @param $data
+     * @return false|string|string[]
+     */
     public function getTaskHtml($data) {
         $tpl = file_get_contents('../tpls/task_row.tpl');
         foreach ($data as $key=>$value) {
             $tpl = str_replace('{{' . $key .'}}', $value, $tpl);
         }
         return $tpl;
+    }
+
+    /**
+     * Формирование ответа
+     * @param $response
+     */
+    public function response($response) {
+        echo json_encode($response);
+        exit();
     }
 
     public function __destruct()

@@ -4,8 +4,16 @@
     <list default="true" id="b7fefd79-69f0-4d60-845f-49969a736736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/crossword.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vue-todolist.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/vue-todolist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/todolist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/todolist.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpls/task_row.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/tpls/task_row.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +49,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -61,7 +74,8 @@
       <updated>1594717138012</updated>
       <workItem from="1594717139811" duration="2946000" />
       <workItem from="1594737407709" duration="135000" />
-      <workItem from="1594799747921" duration="26295000" />
+      <workItem from="1594799747921" duration="29668000" />
+      <workItem from="1594839761444" duration="707000" />
     </task>
     <servers />
   </component>
@@ -69,14 +83,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2025" y="100" width="428" height="826" key="FileChooserDialogImpl" timestamp="1594737536432">
+    <state x="1838" y="170" key="#Deployment" timestamp="1594840346696">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
-    <state x="2025" y="100" width="428" height="826" key="FileChooserDialogImpl/1280.0.1920.1080/3200.152.1440.900/0.28.1280.1024@1280.0.1920.1080" timestamp="1594737536432" />
+    <state x="1838" y="170" key="#Deployment/1280.0.1920.1080/3200.152.1440.900/0.28.1280.1024@1280.0.1920.1080" timestamp="1594840346696" />
+    <state x="2025" y="100" width="428" height="826" key="FileChooserDialogImpl" timestamp="1594840330983">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2025" y="100" width="428" height="826" key="FileChooserDialogImpl/1280.0.1920.1080/3200.152.1440.900/0.28.1280.1024@1280.0.1920.1080" timestamp="1594840330983" />
     <state x="2060" y="434" key="NewPhpFileDialog" timestamp="1594812655838">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
     <state x="2060" y="434" key="NewPhpFileDialog/1280.0.1920.1080/3200.152.1440.900/0.28.1280.1024@1280.0.1920.1080" timestamp="1594812655838" />
+    <state x="2145" y="242" key="ftp.server.browser" timestamp="1594840340087">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2145" y="242" key="ftp.server.browser/1280.0.1920.1080/3200.152.1440.900/0.28.1280.1024@1280.0.1920.1080" timestamp="1594840340087" />
     <state x="1904" y="232" key="run.anything.popup" timestamp="1594832305953">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>

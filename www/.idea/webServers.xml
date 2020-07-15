@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="925fc2e7-4890-42e6-83d7-5d5fba15d855" name="todolist.modxoid.ru" url="http://todolist.modxoid.ru">
+        <fileTransfer host="todolist.modxoid.ru" port="22" privateKey="$USER_HOME$/.ssh/todolistmodxoidru.ppk" rootFolder="/site/www" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
