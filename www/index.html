@@ -9,6 +9,7 @@
     <meta name="description" content="">
 
     <script src="/libs/vue-2.6.11.min.js"></script>
+    <script src="/libs/axios-0.19.2.min.js"></script>
     <script src="/js/script.js"></script>
 
     <link rel="stylesheet" href="/css/styles.css">
@@ -21,44 +22,20 @@
 
             <div class="tasks">
                 <div class="add">
-                    <form action="" method="post">
+                    <form action="" method="post" v-on:submit.prevent="addTask">
                         <div class="field">
-                            <input type="text" name="text" autofocus>
+                            <input type="text" name="title" value="" v-model="title">
                         </div>
-                        
+
                         <button type="submit">Добавить</button>
                     </form>
                 </div>
 
-                <ul class="items">
-                    <li>
-                        <div class="title">Задача 1</div>
-                        <div class="remove">×</div>
-                    </li>
-                    <li>
-                        <div class="title">Задача 1</div>
-                        <div class="remove">×</div>
-                    </li>
-                    <li>
-                        <div class="title">Задача 1</div>
-                        <div class="remove">×</div>
-                    </li>
-                    <li>
-                        <div class="title">Задача 1</div>
-                        <div class="remove">×</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="load-button">
-                <button>Загрузить ещё</button>
-            </div>
-
-            <div class="loader">
-                <div class="loader-ring"></div>
+                <ul id="items" v-html="items"></ul>
             </div>
         </div>
     </div>
-</body>
 
+    <script src="/js/vue-todolist.js"></script>
+</body>
 </html>
